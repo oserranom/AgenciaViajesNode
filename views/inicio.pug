@@ -1,0 +1,37 @@
+extends ./layout/index
+
+block slider 
+    .slider 
+        h1 Rio de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 
+        .row.mb-5
+            .col-md-6 
+                p Ronnie Coleman nació en Monroe, Luisiana el 13 de mayo de 1964. Coleman se graduó en la Universidad Grambling State en 1984 en Contabilidad, obteniendo la calificación Cum laude. Durante su estancia en la universidad jugó al fútbol americano como linebacker con los GSU Tigers, bajo la dirección del entrenador Eddie Robinson.
+                p Después de graduarse no encontró trabajo como contable por lo que comenzó a trabajar en Domino's Pizza, dónde comía pizza de cortesía a diario debido a que era tan pobre que no podía permitirse comer fuera del trabajo.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 Marzo 2025 - 28 Marzo 2025
+                        p.precio 2500€
+
+    .container 
+        h2.mt-5.text-center Opiniones 
+        include ./layout/bloque_opiniones
+
+
+
+
+        

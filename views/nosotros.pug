@@ -1,0 +1,32 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5 
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen de la torre Effiel", class="img-fluid")
+            .col-md-7
+                h1= pagina 
+
+                p Iniciamos cualquier proyecto node con la línea de comandos npm init. Esto se hace desde la carpeta del mismo proyecto, si no te instalaría todo de manera global. Esto creará el package.json donde podremos ver la lista de dependencias, con este documento json es suficiente para saber que dependencias tiene el proyecto y solo compartiendo el package.json cualquiera del equipo sabría que dependencias requiere el proyecto.
+
+                p Hay que diferenciar dependencias de producción y de desarrollo, cuando son de desarrollo hay que indicarle —save-dev. Ejemplo: npm install —save-dev nodemon. Estas son dependencias que solo se requieren como “ayuda” al desarrollo. Si no instalamos la dependencia como —save-dev se instalara por defecto como dependencia de producción. En el package.json tendremos las de producción como “dependencies” y las de desarrollo como “devDependencies”.
+
+
+    .listado-iconos 
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Un poquito de texto para reforzar el mensaje de Seguridad 
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos 
+                    p Un poquito de texto para reforzar el mensaje de mejores destinos
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Precios
+                    p Un poquito de texto para reforzar el mensaje de mejores precios 
